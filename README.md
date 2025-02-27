@@ -1,1 +1,3 @@
-# 05-Simple7Segment-dzim
+# 05-Simple7Segment-dzim (Mirza Dzinic)
+
+## Making a seven segment in Unity!
