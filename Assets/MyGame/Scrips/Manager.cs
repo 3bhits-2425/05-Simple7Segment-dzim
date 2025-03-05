@@ -10,6 +10,8 @@ public class Manager : MonoBehaviour
     private GameObject cube5; //Block mitte oben
     private GameObject cube6; //Block mitte unten
     private GameObject cube7; //Block mitte mittig
+    private GameObject cube8;
+    private GameObject cube;
 
     void Start()
     {
@@ -20,6 +22,8 @@ public class Manager : MonoBehaviour
         cube5 = GameObject.FindWithTag("Num5");
         cube6 = GameObject.FindWithTag("Num6");
         cube7 = GameObject.FindWithTag("Num7");
+        cube8 = GameObject.FindWithTag("Num8");
+        cube = GameObject.FindWithTag("Cube");
     }
 
     private void ResetRotation(string cube, float x, float y, float z)
@@ -36,119 +40,207 @@ public class Manager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             cube1.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube1.GetComponent<Renderer>().material.color = Color.black;
             cube2.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.black;
             cube5.transform.rotation = Quaternion.Euler(0.0f, 90.0f, -90.0f);
+            cube5.GetComponent<Renderer>().material.color = Color.black;
             cube6.transform.rotation = Quaternion.Euler(0.0f, 90.0f, -90.0f);
+            cube6.GetComponent<Renderer>().material.color = Color.black;
             cube7.transform.rotation = Quaternion.Euler(0.0f, 90.0f, -90.0f);
+            cube7.GetComponent<Renderer>().material.color = Color.black;
+
+            cube.GetComponent<Renderer>().material.color = Color.white;
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha1))
         {
             ResetRotation("Num1", 0.0f, 0.0f, 0.0f);
+            cube1.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num2", 0.0f, 0.0f, 0.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num5", 90.0f, 0.0f, 0.0f);
+            cube5.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num6", 90.0f, 0.0f, 0.0f);
+            cube6.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num7", 90.0f, 0.0f, 0.0f);
+            cube7.GetComponent<Renderer>().material.color = Color.blue;
+
+            cube.GetComponent<Renderer>().material.color = Color.magenta;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             cube1.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube1.GetComponent<Renderer>().material.color = Color.black;
             cube3.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube3.GetComponent<Renderer>().material.color = Color.black;
+
+            cube.GetComponent<Renderer>().material.color = Color.white;
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha2))
         {
             ResetRotation("Num1", 0.0f, 0.0f, 0.0f);
+            cube1.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num3", 0.0f, 0.0f, 0.0f);
+            cube3.GetComponent<Renderer>().material.color = Color.blue;
+
+            cube.GetComponent<Renderer>().material.color = Color.magenta;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             cube1.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube1.GetComponent<Renderer>().material.color = Color.black;
             cube2.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.black;
+
+            cube.GetComponent<Renderer>().material.color = Color.white;
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha3))
         {
             ResetRotation("Num1", 0.0f, 0.0f, 0.0f);
+            cube1.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num2", 0.0f, 0.0f, 0.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.blue;
+
+            cube.GetComponent<Renderer>().material.color = Color.magenta;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             cube2.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
-            cube4.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.black;
             cube5.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube5.GetComponent<Renderer>().material.color = Color.black;
             cube6.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube6.GetComponent<Renderer>().material.color = Color.black;
+
+            cube.GetComponent<Renderer>().material.color = Color.white;
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha4))
         {
             ResetRotation("Num2", 0.0f, 0.0f, 0.0f);
-            ResetRotation("Num4", 0.0f, 0.0f, 0.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num5", 90.0f, 0.0f, 0.0f);
+            cube5.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num6", 90.0f, 0.0f, 0.0f);
+            cube6.GetComponent<Renderer>().material.color = Color.blue;
+
+            cube.GetComponent<Renderer>().material.color = Color.magenta;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             cube2.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.black;
             cube4.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube4.GetComponent<Renderer>().material.color = Color.black;
+
+            cube.GetComponent<Renderer>().material.color = Color.white;
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha5))
         {
             ResetRotation("Num2", 0.0f, 0.0f, 0.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num4", 0.0f, 0.0f, 0.0f);
+            cube4.GetComponent<Renderer>().material.color = Color.blue;
+
+            cube.GetComponent<Renderer>().material.color = Color.magenta;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             cube4.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube4.GetComponent<Renderer>().material.color = Color.black;
+
+            cube.GetComponent<Renderer>().material.color = Color.white;
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha6))
         {
             ResetRotation("Num4", 0.0f, 0.0f, 0.0f);
+            cube4.GetComponent<Renderer>().material.color = Color.blue;
+
+            cube.GetComponent<Renderer>().material.color = Color.magenta;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             cube1.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube1.GetComponent<Renderer>().material.color = Color.black;
             cube2.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.black;
             cube6.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube6.GetComponent<Renderer>().material.color = Color.black;
             cube7.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube7.GetComponent<Renderer>().material.color = Color.black;
+
+            cube.GetComponent<Renderer>().material.color = Color.white;
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha7))
         {
             ResetRotation("Num1", 0.0f, 0.0f, 0.0f);
+            cube1.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num2", 0.0f, 0.0f, 0.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num6", 90.0f, 0.0f, 0.0f);
+            cube6.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num7", 90.0f, 0.0f, 0.0f);
+            cube7.GetComponent<Renderer>().material.color = Color.blue;
+
+            cube.GetComponent<Renderer>().material.color = Color.magenta;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            cube.GetComponent<Renderer>().material.color = Color.white;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Alpha8))
+        {
+            cube.GetComponent<Renderer>().material.color = Color.magenta;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha9))
         {
             cube2.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.black;
             cube6.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.black;
+
+            cube.GetComponent<Renderer>().material.color = Color.white;
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha9))
         {
             ResetRotation("Num2", 0.0f, 0.0f, 0.0f);
+            cube2.GetComponent<Renderer>().material.color = Color.blue;
             ResetRotation("Num6", 90.0f, 0.0f, 0.0f);
+            cube6.GetComponent<Renderer>().material.color = Color.blue;
+
+            cube.GetComponent<Renderer>().material.color = Color.magenta;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             cube7.transform.rotation = Quaternion.Euler(0.0f, -90.0f, -90.0f);
+            cube7.GetComponent<Renderer>().material.color = Color.black;
+
+            cube.GetComponent<Renderer>().material.color = Color.white;
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha0))
         {
             ResetRotation("Num7", 90.0f, 0.0f, 0.0f);
+            cube7.GetComponent<Renderer>().material.color = Color.blue;
+
+            cube.GetComponent<Renderer>().material.color = Color.magenta;
         }
     }
 }
