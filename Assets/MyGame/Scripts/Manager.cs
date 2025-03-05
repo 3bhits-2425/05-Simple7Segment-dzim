@@ -13,7 +13,7 @@ public class Manager : MonoBehaviour
     private GameObject cube8;
     private GameObject cube;
 
-    void Start()
+    private void Start()
     {
         cube1 = GameObject.FindWithTag("Num1");
         cube2 = GameObject.FindWithTag("Num2");
@@ -35,7 +35,7 @@ public class Manager : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
